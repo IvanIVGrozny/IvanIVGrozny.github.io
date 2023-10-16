@@ -133,7 +133,7 @@ function trigger(type) {
         location.reload();
         return;
     } else {
-        alert(`success!!!`);
+        alert(`success!!!\nisMac: ${isMac}, isIphone: ${isIphone}, version: ${version}, factor: ${factor}, userAgent: ${navigator.userAgent}`);
         if (unknown_device) {
             alert(`you seems to have found vallid factor for an untested device!\nif you send this information to me, it could be helpful to others.\nisMac: ${isMac}, isIphone: ${isIphone}, version: ${version}, factor: ${factor}, userAgent: ${navigator.userAgent}`);
         }
